@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Group Anagrams | DSA</title>
+    <link rel="icon" href="assets/img/brs-logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <h2>Group Anagrams</h2>
+  </head>
+  <body>
+    <div class="container">
+    <main role="main" style="margin-bottom: 100px;">
+      <h5>Given an array of strings strs, group the anagrams together. You can return the answer in any order</h5>
+      <p>
+        This code uses a Map to store anagrams. It iterates through each string in the input array, sorts its characters, and uses the sorted string as a key in the map. If the key is not present, it creates a new array for that key; otherwise, it adds the current string to the existing array. Finally, it converts the map values to an array and returns the result
+      </p>
+
+      <div id="input">
+        <label for="inputArray">Input Array:</label>
+        <input type="text" id="inputArray" placeholder='["eat","tea","tan","ate","nat","bat"]'>
+        <button onclick="groupAnagrams()">Group Anagrams</button>
+      </div>
+    
+      <div id="output">
+        <h3>Output:</h3>
+        <pre id="result"></pre>
+      </div>
+    </main>
+  </div>
+    
+    <script src="assets/js/group-anagrams.js" defer></script>
+
+  </body>
+</html>
